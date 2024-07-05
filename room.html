@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            position: absolute;
+            top:10%;
+            left: 30%;
+        }
+        form {
+            width: 500px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: rgba(12, 12, 12, 0.837);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: antiquewhite;
+        }
+        input, select {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .room{
+            background-color: rgba(12, 12, 12, 0.837);
+            background-image:url(room.jpg);
+        }
+    </style>
+</head>
+<body class="room">
+    <h1 style="color: whitesmoke;background-color: brown;">Hotel Reservation Form</h1>
+    <form action="./booking.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="arrival_date">Arrival Date:</label>
+        <input type="date" id="arrival_date" name="arrival_date" required>
+
+        <label for="departure_date">Departure Date:</label>
+        <input type="date" id="departure_date" name="departure_date" required>
+
+        <label for="guests">Number of Guests:</label>
+        <select id="guests" name="guests" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4+</option>
+        </select>
+
+        <label for="room_type">Room Type:</label>
+        <select id="room_type" name="room_type" required>
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Suite</option>
+        </select>
+
+        <button type="submit">Book Now</button>
+    </form>
+</body>
+</html>

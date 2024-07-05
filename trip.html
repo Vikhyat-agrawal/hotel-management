@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Decider</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px auto;
+    width: 300px;
+}
+
+.questions label {
+    margin-bottom: 5px;
+}
+
+.questions select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.questions button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body style="background-color: rgba(12, 12, 12, 0.837);background-image: url(trip.jpg);padding: 15px;">
+    <h1>Where Should I Go Next?</h1>
+    <div class="questions">
+        <label for="budget">What's your budget?</label>
+        <select name="budget" id="budget">
+            <option value="low">Low Budget</option>
+            <option value="medium">Medium Budget</option>
+            <option value="high">High Budget</option>
+        </select>
+        <label for="travel-style">How do you like to travel?</label>
+        <select name="travel-style" id="travel-style">
+            <option value="adventure">Adventure</option>
+            <option value="relaxation">Relaxation</option>
+            <option value="culture">Culture</option>
+        </select>
+        <label for="travel-time">How much time do you have?</label>
+        <select name="travel-time" id="travel-time">
+            <option value="weekend">Weekend getaway</option>
+            <option value="week">One week trip</option>
+            <option value="month">Month-long adventure</option>
+        </select>
+        <button onclick="decideTrip()">Decide for Me!</button>
+    </div>
+    <div class="result" id="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help & Contact</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.help h2,
+.contact h2 {
+  margin-bottom: 10px;
+}
+
+.help ul {
+  list-style: none;
+  padding: 0;
+}
+
+.help li {
+  margin-bottom: 5px;
+}
+
+.help li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contact label {
+  margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.contact button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Help & Contact</h1>
+  </header>
+  <main>
+    <section class="help">
+      <h2>Help Center</h2>
+      <p>Find answers to frequently asked questions and troubleshooting guides:</p>
+      <ul>
+        <li><a href="#">Getting Started</a></li>
+        <li><a href="#">Using the Features</a></li>
+        <li><a href="#">Troubleshooting Common Issues</a></li>
+      </ul>
+    </section>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <p>Have a question or need assistance? Get in touch with us:</p>
+      <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Your company name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
